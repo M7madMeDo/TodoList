@@ -117,7 +117,8 @@ const closeEdit = document.querySelector(".cancels");
 
 function editCard(i) {
   editIndex = i;
-
+  editName.value = arrTask[editIndex].Name;
+  editdesc.value = arrTask[editIndex].Description;
   editcard.classList.add("active");
   document.body.classList.add("modal-open");
 }
